@@ -2,7 +2,7 @@
 
 Please read the blog post about visual search []
 
-Video
+[![Visual Search by Machinebox](video.png)](https://vimeo.com/237219541)
 
 ## Requirements
 
