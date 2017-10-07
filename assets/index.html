@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Visual Search by Machine Box</title>
+		<link rel='stylesheet' href='https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css'>
+		<link rel='stylesheet' href='/assets/app.css'>
+	</head>
+	<body>
+		<header>
+			<div class='ui container'>
+				<div class='ui header stackable grid'>
+					<div class='center aligned column'>
+						<div class='ui large secondary top menu'>
+							<a class='item' href='/'>
+								Visual Search by&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<img class='ui main logo' src='/assets/machineboxlogo.svg'>
+							</a>
+							<div class='right menu'>
+								<a class='item'>
+									<a class='item' target='_blank' href='https://machinebox.io/docs/tagbox'>
+										<img class='icon image' src='/assets/machina.svg' />
+										Learn more about Tagbox
+									</a>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class='splash image'>
+			<div class='ui container'>
+				<form class='ui form'>
+					<div class="ui fluid action input">
+						<input name="imageURL" type="text" placeholder="Paste the URL to an image here, or select from one of the sample below">
+							<button class="ui teal right labeled icon button">
+							<i class="search icon"></i>
+							Find Similar
+						</button>
+					</div>
+				</form>
+				<div id='results' class=''></div>
+			</div>
+		</div>
+		
+		<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+		<script src='/assets/arg.js'></script>
+		<script src='/assets/app.js'></script>
+	</body>
+</html>

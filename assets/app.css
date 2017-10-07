@@ -1,0 +1,39 @@
+.main.logo {
+	width: 250px;
+}
+.remove.button {
+	color: #888;
+}
+.icon.image {
+	width: 15px;
+	height: 20px;
+}
+
+body {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.splash.image {
+	padding-top: 50px;
+}
+
+header {
+	background-color: white;
+}
+
+.round.image {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-size: cover;
+	border: 1px solid white;
+	float: left;
+	margin: 5px;
+	background-position: 50%;
+
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.5);
+}
