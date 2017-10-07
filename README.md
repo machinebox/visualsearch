@@ -1,6 +1,7 @@
 # Visual Search by Machine Box
 
-Please read the blog post about visual search []
+Please [read the blog post about visual search](https://blog.machinebox.io/visual-search-by-machine-box-eb30062d8abe
+)
 
 [![Visual Search by Machinebox](video.png)](https://vimeo.com/237219541)
 
