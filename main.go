@@ -15,14 +15,16 @@ import (
 
 func main() {
 	var (
-		addr = flag.String("addr", ":9000", "address")
+		addr  = flag.String("addr", ":9000", "address")
+		state = flag.String("state", "./reddit.machinebox.tagbox", "tagbox state file")
+		csv   = flag.String("csv", "./reddit.csv", "cvs file")
 	)
 
 	flag.Parse()
 	tagbox := tagbox.New("http://localhost:8080")
 	fmt.Println(`visualsearch by Machine Box - https://machinebox.io/`)
 	fmt.Println("Loading data from csv")
-	items, err := LoadData("./reddit.csv")
+	items, err := LoadData(*csv)
 	if err != nil {
 		log.Fatalln(err)
 		return
@@ -35,7 +37,7 @@ func main() {
 
 	fmt.Println("Setup tagbox state")
 
-	f, err := os.Open("./reddit.machinebox.tagbox")
+	f, err := os.Open(*state)
 	if err != nil {
 		log.Fatalln(err)
 		return
