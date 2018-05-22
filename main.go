@@ -8,8 +8,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/machinebox/sdk-go/x/boxutil"
-
+	"github.com/machinebox/sdk-go/boxutil"
 	"github.com/machinebox/sdk-go/tagbox"
 )
 
